@@ -23,15 +23,98 @@ h1,h2,h3 {color:#0b3d91;}
 img {margin:15px 0; border-radius:6px;}
 a {color:#0b3d91;}
 footer a {color:white; margin:0 10px;}
+
+.site-header {
+  background: #0b3d91;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-sub {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.main-nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav {
+    margin-top: 8px;
+  }
+  .main-nav a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>భూ భారతి తెలంగాణ భూ రికార్డులు | Bhu Bharati Telangana Land Records Online</h1>
-<p>EC Download • ROR Check • Land Ownership • Application Status</p>
+<header class="site-header">
+  <div class="container header-inner">
+    
+    <div class="logo">
+      <a href="https://bhubharatitelangana.com/">
+        <span class="logo-title">భూ భారతి తెలంగాణ</span>
+        <span class="logo-sub">Bhu Bharati Telangana Land Records Guide</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="https://bhubharatitelangana.com/">Home</a>
+      <a href="https://bhubharatitelangana.com/ror-check-online">ROR Check</a>
+      <a href="https://bhubharatitelangana.com/mutation-status-telangana">Mutation Status</a>
+      <a href="https://bhubharatitelangana.com/check-land-by-survey-number">Survey Search</a>
+      <a href="https://bhubharatitelangana.com/prohibited-property-check-telangana">Prohibited List</a>
+      <a href="#ec-guide">EC Download</a>
+    </nav>
+
+  </div>
 </header>
+
 
 <div class="ad">Top Banner Ad Space</div>
 
