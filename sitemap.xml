@@ -1,36 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bhubharatitelangana.com/</loc>
-    <lastmod>2026-01-27</lastmod>
-    <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://bhubharatitelangana.com/#ec-guide</loc>
-    <lastmod>2026-01-27</lastmod>
-    <priority>0.8</priority>
+    <loc>https://bhubharatitelangana.com/ror-check-online</loc>
   </url>
-
   <url>
-    <loc>https://bhubharatitelangana.com/#privacy</loc>
-    <priority>0.3</priority>
+    <loc>https://bhubharatitelangana.com/mutation-status-telangana</loc>
   </url>
-
   <url>
-    <loc>https://bhubharatitelangana.com/#disclaimer</loc>
-    <priority>0.3</priority>
+    <loc>https://bhubharatitelangana.com/check-land-by-survey-number</loc>
   </url>
-
   <url>
-    <loc>https://bhubharatitelangana.com/#about</loc>
-    <priority>0.5</priority>
+    <loc>https://bhubharatitelangana.com/prohibited-property-check-telangana</loc>
   </url>
-
-  <url>
-    <loc>https://bhubharatitelangana.com/#contact</loc>
-    <priority>0.5</priority>
-  </url>
-
 </urlset>
