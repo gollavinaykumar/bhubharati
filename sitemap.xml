@@ -31,21 +31,27 @@ permalink: /sitemap.xml
     <loc>https://bhubharatitelangana.com/telangana-stamp-duty-calculator</loc>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/ec-search-telangana</loc>
+    <loc>https://bhubharatitelangana.com/ec-download-telangana</loc>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/document-search-telangana</loc>
+    <loc>https://bhubharatitelangana.com/grs-ec-search-telangana</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/telangana-land-registration-search</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/telangana-land-registration-document-search</loc>
   </url>
 
-  <!-- Legal Pages (Important for AdSense + SEO trust) -->
+  <!-- Legal Pages -->
   <url>
-    <loc>https://bhubharatitelangana.com/privacy-policy.html</loc>
+    <loc>https://bhubharatitelangana.com/privacy-policy</loc>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/disclaimer.html</loc>
+    <loc>https://bhubharatitelangana.com/disclaimer</loc>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/contact.html</loc>
+    <loc>https://bhubharatitelangana.com/contact</loc>
   </url>
 
 </urlset>
