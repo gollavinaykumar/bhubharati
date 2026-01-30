@@ -10,16 +10,40 @@
     <meta name="description"
         content="Telanganaలో Survey Number ద్వారా భూమి యజమాని వివరాలు, ROR, EC సమాచారం ఆన్‌లైన్‌లో ఎలా చెక్ చేయాలో పూర్తి గైడ్.">
 
-    <meta name="keywords"
-        content="Survey number land records Telangana, Check land details by survey number, Telangana land ownership search">
-
     <link rel="canonical" href="https://bhubharatitelangana.com/check-land-by-survey-number">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+   {
+     "@type": "Question",
+     "name": "Survey Number అంటే ఏమిటి?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Survey Number అనేది భూమి గుర్తింపు కోసం ప్రభుత్వ రికార్డుల్లో ఉపయోగించే ప్రత్యేక నంబర్."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "How to search land details by survey number in Telangana?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "You can search land ownership details online through the Bhu Bharati Telangana portal using survey number."
+     }
+   }
+ ]
+}
+</script>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             line-height: 1.7;
+            background: #f9fafc
         }
 
         header,
@@ -27,221 +51,148 @@
             background: #0b3d91;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 15px
+        }
+
+        nav a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+            font-size: 14px
         }
 
         main {
-            padding: 20px;
             max-width: 1000px;
             margin: auto;
+            padding: 20px
         }
 
         h1,
         h2,
         h3 {
-            color: #0b3d91;
+            color: #0b3d91
+        }
+
+        .card {
+            background: white;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08)
         }
 
         .ad {
-            background: #e6e6e6;
-            padding: 15px;
+            background: #eee;
+            padding: 20px;
             text-align: center;
-            margin: 20px 0;
-        }
-
-        a {
-            color: #0b3d91;
+            margin: 25px 0;
+            font-size: 14px;
+            color: #777
         }
 
         ul {
-            margin-left: 20px;
+            padding-left: 18px
         }
 
-        img {
-            margin: 15px 0;
-            border-radius: 6px;
-        }
-
-        .site-header {
-            background: #0b3d91;
-            color: #fff;
-            padding: 10px 0;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            width: 95%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo a {
-            text-decoration: none;
-            color: white;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-title {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .logo-sub {
-            font-size: 12px;
-            opacity: 0.9;
-        }
-
-        .main-nav a {
-            color: white;
-            margin-left: 15px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-        }
-
-        .main-nav a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .header-inner {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .main-nav {
-                margin-top: 8px;
-            }
-
-            .main-nav a {
-                display: inline-block;
-                margin: 5px 10px 5px 0;
-            }
+        a {
+            color: #0b3d91
         }
     </style>
+
+    <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7799890075226457"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
 
-            <div class="logo">
-                <a href="https://bhubharatitelangana.com/">
-                    <span class="logo-title">భూ భారతి తెలంగాణ</span>
-                    <span class="logo-sub">Bhu Bharati Telangana Land Records Guide</span>
-                </a>
-            </div>
-
-            <nav class="main-nav">
-                <a href="https://bhubharatitelangana.com/">Home</a>
-                <a href="https://bhubharatitelangana.com/ror-check-online">ROR Check</a>
-                <a href="https://bhubharatitelangana.com/mutation-status-telangana">Mutation Status</a>
-                <a href="https://bhubharatitelangana.com/check-land-by-survey-number">Survey Search</a>
-                <a href="https://bhubharatitelangana.com/prohibited-property-check-telangana">Prohibited List</a>
-                <a href="https://bhubharatitelangana.com/#ec-guide">EC Download</a>
-            </nav>
-
-        </div>
+    <header>
+        <h1>భూ భారతి తెలంగాణ ల్యాండ్ రికార్డ్స్ గైడ్</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/ror-check-online">ROR</a>
+            <a href="/mutation-status-telangana">Mutation</a>
+            <a href="/check-land-by-survey-number">Survey Number</a>
+            <a href="/prohibited-property-check-telangana">Prohibited</a>
+            <a href="/telangana-market-value-search">Market Value</a>
+            <a href="/telangana-stamp-duty-calculator">Stamp Duty</a>
+        </nav>
     </header>
-
 
     <div class="ad">Top Ad Space</div>
 
-    <div class="container" style="font-size:14px; margin-top:10px;">
-        <a href="https://bhubharatitelangana.com/">Home</a> » Search Land by Survey Number
-    </div>
-
-
     <main>
 
-        <h2>Survey Number అంటే ఏమిటి?</h2>
-        <p>Survey Number అనేది ప్రతి భూమికి ప్రభుత్వ రికార్డుల్లో ఇచ్చే ప్రత్యేక గుర్తింపు నంబర్.</p>
-        <!-- 
-        <img src="survey-number-land-map-telangana.png"
-            alt="Survey number identification example in Telangana land records" width="100%"> -->
+        <!-- Telugu Section -->
+        <section class="card">
+            <h2>Survey Number అంటే ఏమిటి?</h2>
+            <p>Survey Number అనేది ప్రతి భూమికి ప్రభుత్వ రికార్డుల్లో ఇచ్చే ప్రత్యేక గుర్తింపు నంబర్. ఈ నంబర్ ద్వారా
+                భూమి యజమాని వివరాలు, విస్తీర్ణం మరియు భూమి రకం తెలుసుకోవచ్చు.</p>
 
-        <p>A Survey Number is a unique identification number assigned to each land parcel in government records.</p>
+            <h2>Survey Number ఎందుకు అవసరం?</h2>
+            <ul>
+                <li>భూమి యాజమాన్య వివరాలు తెలుసుకోవడానికి</li>
+                <li>కొనుగోలు ముందు లీగల్ వెరిఫికేషన్ కోసం</li>
+                <li>ROR మరియు EC చెక్ చేయడానికి</li>
+                <li>భూమి వివాదాలు నివారించడానికి</li>
+            </ul>
 
-        <h2>Survey Number ఎందుకు అవసరం?</h2>
-        <ul>
-            <li>భూమి యాజమాన్య వివరాలు తెలుసుకోవడానికి</li>
-            <li>కొనుగోలు ముందు లీగల్ వెరిఫికేషన్</li>
-            <li>EC & ROR చెక్ చేయడానికి</li>
-            <li>ల్యాండ్ డిస్ప్యూట్స్ నివారించడానికి</li>
-        </ul>
+            <div class="ad">In Content Ad Space</div>
 
-        <div class="ad">In Content Ad</div>
+            <h2>Telanganaలో Survey Number ద్వారా భూమి వివరాలు ఎలా చెక్ చేయాలి?</h2>
+            <ol>
+                <li>👉 <a href="https://bhubharati.telangana.gov.in" target="_blank">Bhu Bharati Telangana Official
+                        Portal</a> ఓపెన్ చేయండి</li>
+                <li>Citizen Login చేయండి</li>
+                <li>Land Details Search ఎంపిక చేయండి</li>
+                <li>District → Mandal → Village ఎంచుకుని Survey Number నమోదు చేయండి</li>
+                <li>Submit చేసి భూమి యజమాని మరియు భూమి వివరాలు చూడండి</li>
+            </ol>
+        </section>
 
-        <h2>Telanganaలో Survey Number ద్వారా భూమి వివరాలు ఎలా చెక్ చేయాలి?</h2>
+        <!-- English Section -->
+        <section class="card">
+            <h2>What is a Survey Number?</h2>
+            <p>A Survey Number is a unique land identification number assigned by the government. It helps identify
+                ownership, land type, and land area details.</p>
 
-        <h3>స్టెప్ 1: భూ భారతి తెలంగాణ అధికారిక వెబ్‌సైట్ ఓపెన్ చేయండి</h3>
-        <p><a href="https://bhubharati.telangana.gov.in" target="_blank">https://bhubharati.telangana.gov.in</a></p>
+            <h2>Why is Survey Number Important?</h2>
+            <ul>
+                <li>To verify land ownership</li>
+                <li>For legal verification before purchase</li>
+                <li>To check ROR and EC records</li>
+                <li>To avoid land disputes</li>
+            </ul>
 
-        <!-- <img src="bhu-bharati-portal-home-screen.png" alt="Opening Bhu Bharati Telangana official website homepage"
-            width="100%"> -->
+            <div class="ad">In Content Ad Space</div>
 
-        <h3>స్టెప్ 2: Citizen Login చేయండి</h3>
-        <p>మీ మొబైల్ OTP ద్వారా లాగిన్ అవ్వండి.</p>
-        <!-- 
-        <img src="bhu-bharati-login-page.png" alt="Citizen login page Bhu Bharati Telangana" width="100%"> -->
-
-        <h3>స్టెప్ 3: “Land Details Search” ఎంపిక చేయండి</h3>
-        <p>డాష్‌బోర్డ్‌లో Land Details Search ఆప్షన్ కనిపిస్తుంది.</p>
-
-        <!-- <img src="bhu-bharati-land-details-search.png" alt="Land details search option in Telangana Bhu Bharati portal"
-            width="100%"> -->
-
-        <div class="ad">Middle Ad Space</div>
-
-        <h3>స్టెప్ 4: Survey Number నమోదు చేయండి</h3>
-        <p>District → Mandal → Village ఎంపిక చేసి Survey Number టైప్ చేయండి.</p>
-
-        <!-- <img src="survey-number-entry-form-telangana.png"
-            alt="Entering survey number in Telangana land records search form" width="100%"> -->
-
-        <h3>స్టెప్ 5: Submit చేసి భూమి వివరాలు చూడండి</h3>
-        <p>భూమి యజమాని పేరు, భూమి రకం, విస్తీర్ణం వంటి వివరాలు కనిపిస్తాయి.</p>
-
-        <!-- <img src="survey-land-details-result-telangana.png"
-            alt="Survey number land search result showing ownership details Telangana" width="100%"> -->
-
-        <h2>Survey Number ద్వారా తెలుసుకునే వివరాలు</h2>
-        <ul>
-            <li>భూమి యజమాని పేరు</li>
-            <li>భూమి రకం</li>
-            <li>భూమి విస్తీర్ణం</li>
-            <li>పట్టాదారు పాస్‌బుక్ సమాచారం</li>
-        </ul>
+            <h2>Steps to Check Land Details by Survey Number in Telangana</h2>
+            <ol>
+                <li>Visit the <a href="https://bhubharati.telangana.gov.in" target="_blank">official Bhu Bharati
+                        portal</a></li>
+                <li>Login as a citizen</li>
+                <li>Select Land Details Search</li>
+                <li>Choose district, mandal, village and enter survey number</li>
+                <li>View ownership and land details online</li>
+            </ol>
+        </section>
 
         <div class="ad">Bottom Ad Space</div>
 
-        <h2>FAQs</h2>
-
-        <h3>Survey Number మరియు Plot Number ఒకటేనా?</h3>
-        <p>కాదు. Survey Number ప్రభుత్వ రికార్డు గుర్తింపు.</p>
-
-        <h3>Survey Number తెలియకపోతే ఏమి చేయాలి?</h3>
-        <p>Village Revenue Office లేదా పాత రిజిస్ట్రేషన్ డాక్యుమెంట్లలో చూసుకోవచ్చు.</p>
-
-        <p>Also read:
-            <a href="https://bhubharatitelangana.com/ror-check-online">Check ROR Telangana</a> |
-            <a href="https://bhubharatitelangana.com/mutation-status-telangana">Check Mutation Status</a>
-        </p>
+        <section class="card">
+            <h2>Related Telangana Land Services</h2>
+            <ul>
+                <li><a href="/ror-check-online">Check ROR Telangana</a></li>
+                <li><a href="/mutation-status-telangana">Check Mutation Status</a></li>
+                <li><a href="/prohibited-property-check-telangana">Check Prohibited Property List</a></li>
+            </ul>
+        </section>
 
     </main>
-
+    1
     <footer>
-        <p>© 2026 BhuBharatiTelangana.com | Telangana Land Records Guide</p>
+        <p>© 2026 BhuBharatiTelangana.com | Telangana Land Records Information Guide</p>
     </footer>
 
 </body>

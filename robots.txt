@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block admin or private folders if added in future
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+
+# Sitemap location
 Sitemap: https://bhubharatitelangana.com/sitemap.xml

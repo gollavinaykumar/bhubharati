@@ -3,9 +3,13 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://bhubharatitelangana.com/</loc>
   </url>
+
+  <!-- Land Record Guides -->
   <url>
     <loc>https://bhubharatitelangana.com/ror-check-online</loc>
   </url>
@@ -18,4 +22,30 @@ permalink: /sitemap.xml
   <url>
     <loc>https://bhubharatitelangana.com/prohibited-property-check-telangana</loc>
   </url>
+
+  <!-- IGRS & Registration Related -->
+  <url>
+    <loc>https://bhubharatitelangana.com/telangana-market-value-search</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/telangana-stamp-duty-calculator</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/ec-search-telangana</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/document-search-telangana</loc>
+  </url>
+
+  <!-- Legal Pages (Important for AdSense + SEO trust) -->
+  <url>
+    <loc>https://bhubharatitelangana.com/privacy-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/disclaimer.html</loc>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/contact.html</loc>
+  </url>
+
 </urlset>
