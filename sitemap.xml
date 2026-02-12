@@ -10,73 +10,73 @@
 
   <!-- Core Services -->
   <url>
-    <loc>https://bhubharatitelangana.com/ror-check-online</loc>
+    <loc>https://bhubharatitelangana.com/ror-check-online/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/mutation-status-telangana</loc>
+    <loc>https://bhubharatitelangana.com/mutation-status-telangana/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/check-land-by-survey-number</loc>
+    <loc>https://bhubharatitelangana.com/check-land-by-survey-number/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/prohibited-property-check-telangana</loc>
+    <loc>https://bhubharatitelangana.com/prohibited-property-check-telangana/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- EC Services -->
   <url>
-    <loc>https://bhubharatitelangana.com/ec-download-telangana</loc>
+    <loc>https://bhubharatitelangana.com/ec-download-telangana/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/grs-ec-search-telangana</loc>
+    <loc>https://bhubharatitelangana.com/grs-ec-search-telangana/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Registration & Calculator -->
   <url>
-    <loc>https://bhubharatitelangana.com/telangana-land-registration-search</loc>
+    <loc>https://bhubharatitelangana.com/telangana-land-registration-search/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/telangana-land-registration-document-search</loc>
+    <loc>https://bhubharatitelangana.com/telangana-land-registration-document-search/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/telangana-market-value-search</loc>
+    <loc>https://bhubharatitelangana.com/telangana-market-value-search/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/telangana-stamp-duty-calculator</loc>
+    <loc>https://bhubharatitelangana.com/telangana-stamp-duty-calculator/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Footer Pages -->
   <url>
-    <loc>https://bhubharatitelangana.com/privacy-policy</loc>
+    <loc>https://bhubharatitelangana.com/privacy-policy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/disclaimer</loc>
+    <loc>https://bhubharatitelangana.com/disclaimer/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://bhubharatitelangana.com/contact</loc>
+    <loc>https://bhubharatitelangana.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
