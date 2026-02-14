@@ -1,10 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /nogooglebot/
 
-# Disallow admin or sensitive paths
-Disallow: /wp-admin/
-Disallow: /cgi-bin/
-Disallow: /private/
-
-# Sitemap
 Sitemap: https://bhubharatitelangana.com/sitemap.xml
