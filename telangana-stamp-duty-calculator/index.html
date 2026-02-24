@@ -77,6 +77,7 @@
                 <a href="/telangana-land-registration-document-search">Documents</a>
                 <a href="/telangana-market-value-search">Market Val</a>
                 <a href="/telangana-stamp-duty-calculator">Calculator</a>
+                <a href="/about">About</a>
             </nav>
         </div>
     </header>
@@ -90,6 +91,7 @@
 
             <section class="card">
                 <h1>Stamp Duty & Registration Charges Calculator: 2026 Guide</h1>
+                <p><strong>Last Updated: February 2026</strong> | <a href="/about">Editorial Policy</a></p>
                 <p>Registering a property involves paying three components: <strong>Stamp Duty</strong>,
                     <strong>Registration Fee</strong>, and <strong>Transfer Duty</strong>. These charges vary based on
                     the type of transaction (Sale, Gift, Partition) and relationship between parties.
@@ -150,23 +152,94 @@
                 </table>
             </section>
 
-            <!-- Calculator Section -->
+            <!-- Interactive Calculator Section -->
             <section class="card">
-                <h2>2. Simple Calculator Logic</h2>
-                <p>To estimate your cost, follow this formula:</p>
-                <div style="background:var(--gray-100); padding:15px; border-radius:8px; font-family:monospace;">
-                    Total Cost = (Market Value OR Sale Price) × 7.5% + User Charges + Scanning Charges
+                <h2>2. Stamp Duty Calculator (ఛార్జీల కాలిక్యులేటర్)</h2>
+                <p>Enter your property details below to calculate the estimated registration charges:</p>
+
+                <div style="background: var(--gray-100); padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <div style="margin-bottom: 15px;">
+                        <label for="deedType" style="display:block; font-weight:700; margin-bottom:5px;">Document Type
+                            (డాక్యుమెంట్ రకం):</label>
+                        <select id="deedType"
+                            style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; font-size:1rem;">
+                            <option value="sale">Sale Deed (సేల్ డీడ్)</option>
+                            <option value="gift_family">Gift Deed — Family (గిఫ్ట్ డీడ్ — కుటుంబం)</option>
+                            <option value="release">Release Deed (రిలీజ్ డీడ్)</option>
+                            <option value="mortgage">Mortgage / Loan (తనఖా)</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="propertyValue" style="display:block; font-weight:700; margin-bottom:5px;">Property
+                            Value in ₹ (ఆస్తి విలువ):</label>
+                        <input type="number" id="propertyValue" placeholder="e.g. 2000000"
+                            style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; font-size:1rem; box-sizing:border-box;">
+                        <small style="color:#666;">Enter the higher of Market Value or Sale Price</small>
+                    </div>
+                    <button onclick="calculateDuty()"
+                        style="background:var(--secondary-color); color:white; border:none; padding:12px 30px; border-radius:4px; font-size:1rem; font-weight:600; cursor:pointer;">Calculate
+                        (లెక్కించండి)</button>
                 </div>
 
-                <h3>Example Calculation:</h3>
-                <ul>
-                    <li><strong>Market Value:</strong> ₹20,00,000</li>
-                    <li><strong>Stamp Duty (5.5%):</strong> ₹1,10,000</li>
-                    <li><strong>Transfer Duty (1.5%):</strong> ₹30,000</li>
-                    <li><strong>Registration Fee (0.5%):</strong> ₹10,000</li>
-                    <li><strong>Total Payable:</strong> ₹1,50,000 (Plus approx ₹500 scan charges)</li>
-                </ul>
+                <!-- Results -->
+                <div id="calcResults"
+                    style="display:none; background: #e8f5e9; padding: 20px; border-radius: 8px; border: 2px solid #4caf50; margin-top: 15px;">
+                    <h3 style="margin-top:0; color:#2e7d32;">Estimated Charges (అంచనా ఛార్జీలు):</h3>
+                    <table style="width:100%; border-collapse:collapse;">
+                        <tr>
+                            <td style="padding:8px; border-bottom:1px solid #c8e6c9;">Stamp Duty (స్టాంప్ డ్యూటీ)</td>
+                            <td style="padding:8px; border-bottom:1px solid #c8e6c9; text-align:right; font-weight:700;"
+                                id="resStampDuty"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px; border-bottom:1px solid #c8e6c9;">Transfer Duty (ట్రాన్స్ఫర్ డ్యూటీ)
+                            </td>
+                            <td style="padding:8px; border-bottom:1px solid #c8e6c9; text-align:right; font-weight:700;"
+                                id="resTransferDuty"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px; border-bottom:1px solid #c8e6c9;">Registration Fee (రిజిస్ట్రేషన్
+                                ఫీజు)</td>
+                            <td style="padding:8px; border-bottom:1px solid #c8e6c9; text-align:right; font-weight:700;"
+                                id="resRegFee"></td>
+                        </tr>
+                        <tr style="background:#c8e6c9;">
+                            <td style="padding:10px; font-weight:700; font-size:1.1rem;">Total Estimated (మొత్తం)</td>
+                            <td style="padding:10px; text-align:right; font-weight:700; font-size:1.1rem;"
+                                id="resTotal"></td>
+                        </tr>
+                    </table>
+                    <p style="font-size:0.85rem; color:#555; margin-top:10px;">* Additional charges may include User
+                        Charges (~₹300) and Scanning Charges (~₹200). Actual rates may vary; verify on the official IGRS
+                        portal.</p>
+                </div>
             </section>
+
+            <script>
+                function calculateDuty() {
+                    var value = parseFloat(document.getElementById('propertyValue').value);
+                    if (!value || value <= 0) { alert('Please enter a valid property value.'); return; }
+                    var type = document.getElementById('deedType').value;
+                    var stampRate, transferRate, regRate;
+                    switch (type) {
+                        case 'sale': stampRate = 0.055; transferRate = 0.015; regRate = 0.005; break;
+                        case 'gift_family': stampRate = 0.01; transferRate = 0.015; regRate = 0.005; break;
+                        case 'release': stampRate = 0.03; transferRate = 0; regRate = 0.005; break;
+                        case 'mortgage': stampRate = 0.005; transferRate = 0.001; regRate = 0.001; break;
+                        default: stampRate = 0.055; transferRate = 0.015; regRate = 0.005;
+                    }
+                    var stampDuty = Math.round(value * stampRate);
+                    if (type === 'mortgage' && stampDuty > 50000) stampDuty = 50000;
+                    var transferDuty = Math.round(value * transferRate);
+                    var regFee = Math.round(value * regRate);
+                    var total = stampDuty + transferDuty + regFee;
+                    document.getElementById('resStampDuty').textContent = '₹' + stampDuty.toLocaleString('en-IN');
+                    document.getElementById('resTransferDuty').textContent = '₹' + transferDuty.toLocaleString('en-IN');
+                    document.getElementById('resRegFee').textContent = '₹' + regFee.toLocaleString('en-IN');
+                    document.getElementById('resTotal').textContent = '₹' + total.toLocaleString('en-IN');
+                    document.getElementById('calcResults').style.display = 'block';
+                }
+            </script>
 
             <!-- Guide Section -->
             <section class="card">
@@ -236,11 +309,22 @@
                 </div>
             </section>
 
+            <section class="card">
+                <h2>Related Guides</h2>
+                <ul>
+                    <li><a href="/telangana-market-value-search">Check Market Value Online</a></li>
+                    <li><a href="/telangana-land-registration-search">Complete Registration Process</a></li>
+                    <li><a href="/land-buying-checklist-telangana">Land Buying Checklist</a></li>
+                    <li><a href="/ec-download-telangana">Download Encumbrance Certificate</a></li>
+                </ul>
+            </section>
+
         </div>
     </main>
 
     <footer>
         <p>
+            <a href="/about">About Us</a> |
             <a href="/privacy-policy">Privacy Policy</a> |
             <a href="/disclaimer">Disclaimer</a> |
             <a href="/contact">Contact</a>
