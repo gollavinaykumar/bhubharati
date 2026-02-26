@@ -64,6 +64,18 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog / Article Pages -->
+  <url>
+    <loc>https://bhubharatitelangana.com/common-mistakes-buying-land-telangana/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bhubharatitelangana.com/telangana-land-registration-process/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- New Article Pages -->
   <url>
     <loc>https://bhubharatitelangana.com/land-buying-checklist-telangana/</loc>
